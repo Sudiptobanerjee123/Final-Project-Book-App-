@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bookAppComments" />
+        <module name="bookAppLogin" />
+        <module name="bookAppUser" />
+        <module name="bookAppFavourites" />
+        <module name="bookAppFavourite" />
+        <module name="bookAppComment" />
+        <module name="bookAppRecommend" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bookAppComment" options="-parameters" />
+      <module name="bookAppComments" options="-parameters" />
+      <module name="bookAppFavourite" options="-parameters" />
+      <module name="bookAppFavourites" options="-parameters" />
+      <module name="bookAppLogin" options="-parameters" />
+      <module name="bookAppRecommend" options="-parameters" />
+      <module name="bookAppUser" options="-parameters" />
+    </option>
+  </component>
+</project>

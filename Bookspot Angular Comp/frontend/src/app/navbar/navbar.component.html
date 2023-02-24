@@ -1,0 +1,104 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  style="background-color: #eceefd" 
+>
+  <img src="../../assets/Book-logo.jpg" />
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Categories<span class="sr-only">(current)</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#latest">LatestBooks</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#latest">Top-Rated</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#fiction">Fiction</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#drama">Drama</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#philosophy">Philosophy</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#horror">Horror</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#thriller">Thriller</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#art">Art</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#science">Science</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="#comedy">Comedy</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" mat-button (click)="home()">Home</button>
+      </li>
+      <li *ngIf="flag == true" class="nav-item">
+        <button class="nav-link" mat-button (click)="login()">Login</button
+        ><span class="sr-only">(current)</span>
+      </li>
+      <li *ngIf="flag == true" class="nav-item">
+        <button class="nav-link" mat-button (click)="register()">
+          Register</button
+        ><span class="sr-only">(current)</span>
+      </li>
+      <li *ngIf="flag == false" class="nav-item">
+        <button class="nav-link" mat-button (click)="fav()">Favourites</button>
+      </li>
+      <!-- <li *ngIf="flag == false" class="nav-item">
+        <button class="nav-link" mat-button (click)="author()">Author</button>
+      </li> -->
+      <li *ngIf="flag == false" class="nav-item">
+        <button class="nav-link" mat-button (click)="rec()">
+          Recommendations
+        </button>
+      </li>
+    </ul>
+
+    <div class = "searchseparate">
+      <form
+      [formGroup]="booksearch"
+      (ngSubmit)="search()"
+      class="form-inline my-2 my-lg-0 search-form"
+    >
+      <input
+        [formControl]="title"
+        class="form-control mr-sm-2 search-filled"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button
+        class="btn btn-outline-success my-2 my-sm-0"
+        type="submit"
+        onclick="search()"
+      >
+        Search
+      </button>
+    </form>
+
+    <button class="signout" *ngIf="flag == false" mat-button (click)="signout()">Sign Out</button>
+    </div>
+    
+  </div>
+</nav>

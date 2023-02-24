@@ -1,0 +1,14 @@
+.dialogRow
+{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    /* margin: 20px; */
+    background-color: oldlace;
+}
+.borderr
+{
+    margin: 20px;
+    color: blueviolet;
+    
+}

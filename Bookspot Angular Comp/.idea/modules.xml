@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bookAppComment/bookAppComment.iml" filepath="$PROJECT_DIR$/bookAppComment/bookAppComment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookAppFavourite/bookAppFavourite.iml" filepath="$PROJECT_DIR$/bookAppFavourite/bookAppFavourite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookAppRecommend/bookAppRecommend.iml" filepath="$PROJECT_DIR$/bookAppRecommend/bookAppRecommend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookAppUser/bookAppUser.iml" filepath="$PROJECT_DIR$/bookAppUser/bookAppUser.iml" />
+    </modules>
+  </component>
+</project>

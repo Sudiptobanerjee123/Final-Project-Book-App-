@@ -1,0 +1,74 @@
+img{
+    height:60px;
+    width:100px;
+    border-radius: 20%;
+    
+}
+.navbar{
+    border-bottom: 3px solid red;
+    padding: 0px;
+    margin: 0px;
+    /* background-color: lightyellow; */
+    /* position: fixed;
+    margin-bottom: 40px;
+    overflow: hidden;
+    width: 100%; */
+    /* margin-bottom: 400px;*/
+    /* overflow: hidden;  */
+    
+}
+.searchseparate{
+
+    padding-inline-end: 10px;
+    padding-right: 12px;
+}
+.signout{
+
+    background-color:maroon;
+    color: mintcream;
+    border: oldlace;
+    top: 8px;
+    left: 70%;
+    
+}
+.nav-link
+{
+    width: 162px  !important;
+}
+.dropdown-item{
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+  }
+ul li button{
+    font-size: 19px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    margin:20px;
+    color: black;
+    width:120px;
+}
+ul li a{
+    font-size: 19px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    margin:20px;
+    color: black;
+    width:120px;
+}
+.search-filled{
+    width:200px;
+    height:30px;
+    font-size: 15px;
+    color: lightskyblue;
+}
+.btn{
+    border:1px solid black;
+    height:30px;
+    width:80px;
+    color:black;
+    font-size: 15px;
+}
+.btn:hover{
+    background-color: grey;
+    color:white;
+}
